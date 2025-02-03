@@ -68,7 +68,7 @@ Design a clean UI for managing users using Tailwind CSS or another UI library.
 Clone the repository: git clone https://github.com/Vinod1204/User-Management-API.git
 
 **Backend**
-Navigate to the backend directory: cd user-management-api
+Navigate to the backend directory: cd user-management-backend
 
 Install dependencies: npm install
 
@@ -80,7 +80,7 @@ SUPABASE_KEY=your_supabase_anon_key
 *Start the server*: npm run dev
 
 **Frontend**
-Navigate to the frontend directory: cd user-management-dashboard
+Navigate to the frontend directory: cd user-management-frontend
 
 Install dependencies: npm install
 
