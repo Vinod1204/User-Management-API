@@ -86,7 +86,7 @@ Install dependencies: npm install
 
 Create a .env file in the root directory with your NextAuth or Supabase Auth credentials.
 
-Start the Next.jsapplication: npm run dev
+Start the Next.js application: npm run dev
 
 ## Principal Technologies
 ***Backend***: Node.js, Express.js, TypeScript, Supabase, Axios
