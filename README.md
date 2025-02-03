@@ -88,10 +88,10 @@ Create a .env file in the root directory with your NextAuth or Supabase Auth cre
 
 Start the Next.jsapplication: npm run dev
 
-Principal Technologies
-Backend: Node.js, Express.js, TypeScript, Supabase, Axios
+## Principal Technologies
+***Backend***: Node.js, Express.js, TypeScript, Supabase, Axios
 
-Frontend: Next.js, TypeScript, NextAuth.js/SupabaseAuth, Tailwind CSS, Axios
+***Frontend***: Next.js, TypeScript, NextAuth.js/SupabaseAuth, Tailwind CSS, Axios
 
 
 ## Author
