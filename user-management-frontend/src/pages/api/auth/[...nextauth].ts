@@ -4,6 +4,11 @@
 import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 
+const users = [
+  { id: "1", name: "Admin", email: "admin@example.com", password: "admin123", role: "admin" },
+  { id: "2", name: "User", email: "user@example.com", password: "user123", role: "user" },
+];
+
 export default NextAuth({
   providers: [
     CredentialsProvider({
