@@ -68,7 +68,7 @@ Design a clean UI for managing users using Tailwind CSS or another UI library.
 
 ## How to Run the Application
 Backend
-Clone the repository: git clone <repository-url>
+Clone the repository: git clone https://github.com/Vinod1204/User-Management-API.git
 
 Navigate to the backend directory: cd user-management-api
 
