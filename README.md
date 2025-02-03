@@ -7,9 +7,6 @@ Create a REST API using Express, TypeScript, and Supabase to manage users with C
 
 
 
-## Submission
-Provide a GitHub repository containing your project. Include a README file with instructions on how to run the application, any specific setup requirements, and details about the technologies used.
-
 ## Requirements
 ***Backend (Express + TypeScript + Supabase)***
 Setup an Express server with TypeScript
@@ -67,9 +64,10 @@ Use Axios to call the Express API from the Next.jsapplication.
 Design a clean UI for managing users using Tailwind CSS or another UI library.
 
 ## How to Run the Application
-**Backend**
+
 Clone the repository: git clone https://github.com/Vinod1204/User-Management-API.git
 
+**Backend**
 Navigate to the backend directory: cd user-management-api
 
 Install dependencies: npm install
