@@ -11,12 +11,12 @@ Create a REST API using Express, TypeScript, and Supabase to manage users with C
 Provide a GitHub repository containing your project. Include a README file with instructions on how to run the application, any specific setup requirements, and details about the technologies used.
 
 ## Requirements
-**Backend (Express + TypeScript + Supabase)**
+***Backend (Express + TypeScript + Supabase)***
 Setup an Express server with TypeScript
 
 Use Supabase as the database (PostgreSQL)
 
-## Database Setup
+**Database Setup**
 Create a users table in Supabase with the following columns:
 
 id (UUID, primary key)
@@ -27,7 +27,7 @@ email (string, unique)
 
 created_at (timestamp)
 
-## REST API Endpoints
+**REST API Endpoints**
 GET /users - Fetch all users
 
 GET /users/:id - Fetch a user by ID
@@ -41,7 +41,7 @@ DELETE /users/:id - Delete a user
 
 Use Axios inside your Express routes to make a request to an external API (e.g., fetch a random profile picture from an API when creating a user).
 
-**Frontend (Next.js + Multi-User Role Authentication + Dashboard Integration)**
+***Frontend (Next.js + Multi-User Role Authentication + Dashboard Integration)***
 Create a Next.jsapplication with TypeScript.
 
 Implement multi-user role authentication using NextAuth.jsor Supabase Auth.
@@ -67,7 +67,7 @@ Use Axios to call the Express API from the Next.jsapplication.
 Design a clean UI for managing users using Tailwind CSS or another UI library.
 
 ## How to Run the Application
-Backend
+**Backend**
 Clone the repository: git clone https://github.com/Vinod1204/User-Management-API.git
 
 Navigate to the backend directory: cd user-management-api
@@ -81,7 +81,7 @@ SUPABASE_KEY=your_supabase_anon_key
 
 *Start the server*: npm run dev
 
-Frontend
+**Frontend**
 Navigate to the frontend directory: cd user-management-dashboard
 
 Install dependencies: npm install
