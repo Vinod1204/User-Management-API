@@ -1,6 +1,6 @@
 # User Management API
 ## Introduction
-Welcome to the README for the Simple User Management API project. This project demonstrates how to build a REST API using Express, TypeScript, and Supabase for managing users (CRUD operations). Additionally, it includes a Next.jsapplication with multi-user role authentication and integrates the users API on the dashboard page.
+Welcome to the README for the User Management API project. This project demonstrates how to build a REST API using Express, TypeScript, and Supabase for managing users (CRUD operations). Additionally, it includes a Next.jsapplication with multi-user role authentication and integrates the users API on the dashboard page.
 
 ## Goal
 Create a REST API using Express, TypeScript, and Supabase to manage users with CRUD operations. Utilize Axios for API calls and create a Next.jsapplication with multi-user role authentication.
