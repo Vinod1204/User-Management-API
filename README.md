@@ -38,7 +38,7 @@ PUT /users/:id - Update user details
 
 DELETE /users/:id - Delete a user
 
-## Use Axios
+
 Use Axios inside your Express routes to make a request to an external API (e.g., fetch a random profile picture from an API when creating a user).
 
 **Frontend (Next.js + Multi-User Role Authentication + Dashboard Integration)**
