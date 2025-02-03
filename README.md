@@ -78,7 +78,8 @@ Create a .env file in the root directory with your Supabase credentials:
 
 SUPABASE_URL=your_supabase_url
 SUPABASE_KEY=your_supabase_anon_key
-Start the server: npm run dev
+
+*Start the server*: npm run dev
 
 Frontend
 Navigate to the frontend directory: cd user-management-dashboard
