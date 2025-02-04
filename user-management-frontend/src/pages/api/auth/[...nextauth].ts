@@ -1,6 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-explicit-any */
-// pages/api/auth/[...nextauth].ts
 import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 
@@ -29,11 +28,11 @@ export default NextAuth({
         const user = users.find((u) => u.email === credentials.email);
       
         if (!user) {
-          console.log('User not found'); // Add this line
+          console.log('User not found'); 
           return null;
         }
       
-        console.log('User authorized:', user); // Add this line
+        console.log('User authorized:', user); 
         return {
           id: user.id,
           name: user.name,

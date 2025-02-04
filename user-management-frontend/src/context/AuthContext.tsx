@@ -1,8 +1,7 @@
 import { createContext, useContext, useEffect, useState, ReactNode } from "react";
 import { useSession } from "next-auth/react";
-import { AuthContextType } from "@/types/AuthContext"; // Import the AuthContextType
+import { AuthContextType } from "@/types/AuthContext";
 
-// Create the context with a default value of null
 const AuthContext = createContext<AuthContextType | null>(null);
 
 interface AuthProviderProps {

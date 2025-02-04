@@ -5,9 +5,9 @@ import { fetchUsers, fetchUser, addUser, editUser, removeUser } from "../control
 const router = express.Router();
 
 router.get("/users", fetchUsers);
-router.get("/users/:id", fetchUser); // Added slash before :id
+router.get("/users/:id", fetchUser);
 router.post("/users", addUser);
-router.put("/users/:id", editUser); // Added slash before :id
-router.delete("/users/:id", removeUser); // Added slash before :id
+router.put("/users/:id", editUser); 
+router.delete("/users/:id", removeUser); 
 
 export default router;

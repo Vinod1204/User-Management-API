@@ -1,12 +1,12 @@
 import axios from "axios";
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL;
-const SUPABASE_KEY = process.env.NEXT_PUBLIC_SUPABASE_KEY; // Ensure this is set in your .env.local
+const SUPABASE_KEY = process.env.NEXT_PUBLIC_SUPABASE_KEY; 
 
 export const api = axios.create({
   baseURL: API_URL,
   headers: {
-    'apikey': SUPABASE_KEY, // Include the API key in the headers
+    'apikey': SUPABASE_KEY, 
   },
 });
 
