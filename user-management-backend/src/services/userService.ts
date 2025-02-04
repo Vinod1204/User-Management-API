@@ -8,7 +8,7 @@ export const getUserById = async (id: string) => {
   return await supabase.from("users").select("*").eq("id", id).single();
 };
 
-export const createUser = async (name: string, email: string, avatar: string) => {
+export const createUser = async (name: string, email: string) => {
   return await supabase.from("users").insert([{ name, email }]);
 };
 

@@ -1,6 +1,5 @@
 import { Request, Response } from 'express';
 import { getAllUsers, getUserById, createUser, updateUser, deleteUser } from '../services/userService';
-import { getRandomAvatar } from '../utils/fetchAvatar';
 
 export const fetchUsers = async (req: Request, res: Response): Promise<void> => {
   try {
@@ -33,8 +32,7 @@ export const fetchUser = async (req: Request, res: Response): Promise<void> => {
 export const addUser = async (req: Request, res: Response): Promise<void> => {
   try {
     const { name, email } = req.body;
-    const avatar = await getRandomAvatar();
-    const { data, error } = await createUser(name, email, avatar);
+    const { data, error } = await createUser(name, email);
     if (error) {
       res.status(500).json(error);
       return;
