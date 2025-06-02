@@ -12,8 +12,8 @@ export const createUser = async (name: string, email: string) => {
   return await supabase.from("users").insert([{ name, email }]);
 };
 
-export const updateUser = async (id: string, name: string) => {
-  return await supabase.from("users").update({ name }).eq("id", id);
+export const updateUser = async (id: string, name: string, email: string) => {
+  return await supabase.from("users").update({ name, email }).eq("id", id);
 };
 
 export const deleteUser = async (id: string) => {
