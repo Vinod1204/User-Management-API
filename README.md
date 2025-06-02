@@ -84,6 +84,13 @@ Navigate to the frontend directory: cd user-management-frontend
 
 Install dependencies: npm install
 
+Create a `.env` file in the frontend root and define the following variables:
+```
+NEXT_PUBLIC_API_URL=http://localhost:5000
+NEXT_PUBLIC_SUPABASE_KEY=your_supabase_key
+NEXTAUTH_SECRET=some_secret
+```
+
 Create a .env file in the root directory with your NextAuth or Supabase Auth credentials.
 
 Start the Next.js application: npm run dev

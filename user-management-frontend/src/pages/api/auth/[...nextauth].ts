@@ -16,23 +16,14 @@ export default NextAuth({
         email: { label: "Email", type: "text" },
         password: { label: "Password", type: "password" },
       },
-      async authorize(credentials, req) {
+      async authorize(credentials) {
         if (!credentials) return null;
-      
-        const users = [
-          { id: "1", name: "Admin", email: "admin@example.com", role: "admin" },
-          { id: "2", name: "User", email: "user@example.com", role: "user" },
-        ];
-      
-        console.log('Credentials received:', credentials); // Add this line
+
         const user = users.find((u) => u.email === credentials.email);
-      
-        if (!user) {
-          console.log('User not found'); 
+        if (!user || user.password !== credentials.password) {
           return null;
         }
-      
-        console.log('User authorized:', user); 
+
         return {
           id: user.id,
           name: user.name,
