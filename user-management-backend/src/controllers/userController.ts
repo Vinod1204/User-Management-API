@@ -46,8 +46,8 @@ export const addUser = async (req: Request, res: Response): Promise<void> => {
 
 export const editUser = async (req: Request, res: Response): Promise<void> => {
   try {
-    const { name } = req.body;
-    const { data, error } = await updateUser(req.params.id, name);
+    const { name, email } = req.body;
+    const { data, error } = await updateUser(req.params.id, name, email);
     if (error) {
       res.status(500).json(error);
       return;
