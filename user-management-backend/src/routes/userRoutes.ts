@@ -4,10 +4,10 @@ import { fetchUsers, fetchUser, addUser, editUser, removeUser } from "../control
 
 const router = express.Router();
 
-router.get("/users", fetchUsers);
-router.get("/users/:id", fetchUser);
-router.post("/users", addUser);
-router.put("/users/:id", editUser); 
-router.delete("/users/:id", removeUser); 
+router.get("/", fetchUsers);
+router.get("/:id", fetchUser);
+router.post("/", addUser);
+router.put("/:id", editUser);
+router.delete("/:id", removeUser);
 
 export default router;
