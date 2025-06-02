@@ -1,5 +1,5 @@
 
-import { useSession } from "next-auth/react";
+import { useSession, signIn } from "next-auth/react";
 import { useRouter } from "next/router";
 import { ReactNode } from "react";
 
@@ -16,7 +16,7 @@ const AdminRoute = ({ children }: AdminRouteProps) => {
   }
 
   if (session?.user.role !== "admin") {
-    router.push("/auth/signin"); 
+    signIn();
     return null;
   }
 
